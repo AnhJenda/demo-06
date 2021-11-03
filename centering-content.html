@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Centering Content</title>
+		<style type="text/css">
+			body {
+				text-align: center; /* văn bản hiển thị sẽ được căn giữa */
+			}
+			p {
+				width: 300px;				/* không thiết lập text-align nên sẽ kế thừa của <body>*/
+				padding: 50px;
+				border: 20px solid #0088dd;
+			}
+			p.example {
+				margin: 10px auto 10px auto;
+				text-align: left;	/* văn bản hiển thị sẽ được căn lề trái */
+			}
+		</style>
+	</head>
+	<body>
+		<p>Analog synthesizers are often said to have a "warmer" sound than their digital counterparts. Quang Anh</p>
+		<p class="example">Analog synthesizers are often said to have a "warmer" sound than their digital counterparts.</p>
+	</body>
+</html>

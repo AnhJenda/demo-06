@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Box Shadow</title>
+		<style type="text/css">
+			p {
+				width: 100px;
+				height: 100px;
+				background-color: #e1ddda;
+				margin: 20px;
+				display: inline-block;  /* Đọc thêm về thuộc tính display, các giá trị block, inline, inline-block */
+			}
+			/* box-shadow là thuộc tính tạo bóng cho phần tử*/
+			p.one {
+				-moz-box-shadow: -5px -5px #777777;
+				-webkit-box-shadow: -5px -5px #777777;
+				box-shadow: -5px -5px #777777;
+				/* trong dòng code trên:
+					giá trị -5px: là giá trị của h-shadow (thuộc tính thiết lập vị trí đổ bóng theo chiều ngang)
+					giá trị -5px tiếp theo là giá trị của v-shadow (thuộc tính thiết lập ví trí đổ bóng theo chiều dọc)
+					#777777 là màu của bóng.
+				 */
+			}
+
+			p.two {
+				-moz-box-shadow: 5px 5px 5px #777777;
+				-webkit-box-shadow: 5px 5px 5px #777777;
+				box-shadow: 5px 5px 5px #777777;
+			}
+
+			p.three {
+				-moz-box-shadow: 5px 5px 5px 5px #777777;
+				-webkit-box-shadow: 5px 5px 5px 5px #777777;
+				box-shadow: 5px 5px 5px 5px #777777;
+			}
+
+			p.four {
+				-moz-box-shadow: 0 0 10px #777777;
+				-webkit-box-shadow: 0 0 10px #777777;
+				box-shadow: 0 0 10px #777777;
+			}
+
+			p.five {
+				-moz-box-shadow: inset 0 0 10px #777777;
+				-webkit-box-shadow: inset 0 0 10px #777777;
+				box-shadow: inset 0 0 10px #777777;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one">ONE</p>
+		<p class="two">TWO</p>
+		<p class="three">THREE</p>
+		<p class="four">FOUR</p>
+		<p class="five">FIVE</p>
+	</body>
+</html>
+

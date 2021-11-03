@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Border Image</title>
+		<style type="text/css">
+			p {
+				width: 197px;
+				height: 54px;
+				border: 11px solid #ffffff;
+			}
+			p.one {
+				-moz-border-image: url("images/dots.gif") 11 11 11 11 stretch; /* -moz-border-image: hỗ trợ khi chạy trên firefox*/
+				/* url là đường dẫn tới ảnh: các giá trị tiếp theo là thuộc tính "offset" tương ứng với
+					lề trên, lề phải, lề dưới và lề trái; stretch là kéo giãn hình ảnh để phù hợp với các cạnh,
+					ở p.two thì giá trị này là round, giá trị này sẽ lặp lại hình ảnh và tuỳ chỉnh sao cho vừa các ảnh, tức là
+					sẽ không có ảnh nào bị cắt để cho vừa khung hình*/
+				-webkit-border-image: url("images/dots.gif") 11 11 11 11 stretch;/*-webkit- hỗ trợ khi chạy trên Chrom và Safari*/
+				border-image: url("images/dots.gif") 11 11 11 11 stretch; /* đây là khai báo chuẩn trong CSS3 */
+			}
+			p.two {
+				-moz-border-image: url("images/dots.gif") 11 11 11 11 round;
+				-webkit-border-image: url("images/dots.gif") 11 11 11 11 round;
+				border-image: url("images/dots.gif") 11 11 11 11 round;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one"></p>
+		<p class="two"></p>
+	</body>
+</html>
+

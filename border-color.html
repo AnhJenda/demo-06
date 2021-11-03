@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Border Color</title>
+		<!--Sử dụng kiểu internal để tạo kiểu CSS-->
+		<style type="text/css">
+			/*tạo kiểu cho các phần tử trong thẻ <body>, những kiểu này có thể bị thay đổi nếu có tạo kiểu cụ thể hơn
+				bên trong thẻ <body>
+			 */
+			body {
+				font-family: Arial, Verdana, sans-serif;
+				color: #111111;
+			}
+			/* tạo kiểu cho phần tử đoạn văn */
+			p {
+				border-style: dashed;  /* thiết lập kiểu đường viền bao quanh đoạn văn */
+				border-width: 2px;	/* border-width dùng để thiết lập độ dày của đường viền */
+				width: 200px;	/* thiết lập độ rộng cho đoạn văn trong phần tử <p> */
+			}
+			/* tạo kiểu cho phần tử đoạn văn có class="one" */
+			p.one {
+				border-color: #0088dd; /* thiết lập màu sắc cho đường viền bao quanh đoạn văn
+				vì có một giá trị nên các thuộc tính top, right, bottom, left ở trường hợp này là bằng nhau(đều là màu #0088dd)*/
+			}
+			/* tạo kiểu cho phần tử đoạn văn có class="two" */
+			p.two {
+				border-color: #bbbbaa red blue #0088dd; /* border-top-color: #bbbbaa; border-right-color: red;
+															border-bottom-color: blue; border-left-color: #0088dd*/
+
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one">The ARP Odyssey was introduced in 1972.</p>
+		<p class="two">The ARP Odyssey was introduced in 1972.</p>
+	</body>
+</html>

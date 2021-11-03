@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Border Width</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, Verdana, sans-serif;
+			color: #111111;
+		}
+
+		p {
+			width: 200px;
+			border-style: solid;
+		}
+		/* border-width dùng để thiết lập độ dày của đường viền bao quanh phần tử. Các giá trị keyword là:
+				thin: mỏng; nomal: bình thường; thick: dày; initial: sử dụng giá trị mặc định; inherit: kế thừa của phần tử mẹ.
+			ngoài ra cũng có thể đặt giá trị bằng kiểu số như 1px, 5px, 10px,...
+				1px: tương đương với thin
+				3px tương đương với nomal
+				5px  tương đương với thick
+		 */
+		p.one {
+			border-width: 2px;
+		}
+
+		p.two {
+			border-width: thick;
+		}
+
+		p.three {
+			border-width: 1px 4px 12px 4px;
+		}
+		/* khi border-width chỉ có một giá trị, ta hiểu rằng các cạnh trên, dưới, trái, phải của đường viền đều có cũng một giá trị đó
+			khi có 4 giá trị như ở <p class="three"> thì 4 giá trị đó tương ứng với lần lượt các cạnh trên->phải->dưới->trái.
+		 */
+	</style>
+</head>
+
+<body>
+	<p class="one">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+	<p class="two">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+	<p class="three">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+</body>
+
+</html>
